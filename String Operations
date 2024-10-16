@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+public class StringOperations {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter a string:");
+        if (scanner.hasNextLine()) {
+            String input = scanner.nextLine();
+
+            // Convert the input string to uppercase
+            String upperCaseInput = input.toUpperCase();
+            System.out.println("Uppercase string: " + upperCaseInput);
+
+            // Find the length of the string
+            int length = input.length();
+            System.out.println("Length of the string: " + length);
+
+            // Display a substring from the third to the fifth character
+            String substring = input.substring(2, 5);
+            System.out.println("Substring from the third to the fifth character: " + substring);
+        } else {
+            System.out.println("No input provided.");
+        }
+    }
+}
