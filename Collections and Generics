@@ -1,0 +1,20 @@
+import java.util.HashMap;
+import java.util.Map;
+
+public class StudentScores {
+    public static void main(String[] args) {
+        // Create a HashMap with String as key and Integer as value
+        Map<String, Integer> studentScores = new HashMap<>();
+
+        // Add students and their scores to the HashMap
+        studentScores.put("John", 85);
+        studentScores.put("Jane", 92);
+        studentScores.put("Mike", 78);
+        studentScores.put("Sarah", 88);
+
+        // Print the details of each student using a for-each loop
+        for (Map.Entry<String, Integer> entry : studentScores.entrySet()) {
+            System.out.println("Student Name: " + entry.getKey() + ", Score: " + entry.getValue());
+        }
+    }
+}
